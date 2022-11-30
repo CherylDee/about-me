@@ -6,7 +6,7 @@
 
 let userName = prompt('What is your name?');
 
-alert('Greetings, ${userName}! Please answer the following questions with yes/no or y/n');
+alert(`Hello ${userName} Please answer the following questions with yes/no or y/n`);
 
 //TODO: prompt them with 5 yes or no (y/n) questions, alert if they got the answer right or wrong
 
