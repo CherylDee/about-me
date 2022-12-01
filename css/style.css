@@ -12,3 +12,18 @@ h1 {
   font-size: 3vw;
   padding-bottom: 1vw;
 }
+
+h2 {
+  font-size: 2vw;
+  padding-bottom: 1vw;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 4vw; 
+}
+
+ul {
+  list-style: disc;
+  margin-left: 4vw;
+}

@@ -17,7 +17,7 @@ if(firstGuess === 'yes' || firstGuess === 'y'){
   //console.log('Sorry, you got it wrong.');
 }else if(firstGuess === 'no' || firstGuess === 'n'){
   alert('You got it right!');
-  //console.log('You got it right!');
+  //console.log('You got i t right!');
 }
 
 
@@ -67,3 +67,30 @@ if(fifthGuess === 'yes' || fifthGuess === 'y'){
 //TODO: GIVE a personalized message at the end
 
 alert(`Thank you, ${userName} for playing my guessing game! I hope you enjoyed getting to know me. Goodbye.`);
+
+//TODO: prompt user to guess number in 4 tries, tell if too high or too low, give the number after 4 tries.
+
+let myNum = 12
+let numGuess = 0
+let userGuess = prompt('What number am I thinking of?');
+
+while (userGuess !== myNum && numGuess < 4) {
+  if(userGuess < myNum) {
+    alert('Too low');
+    //console.log('Too low');
+  }
+  else if (userGuess > myNum) {
+    alert('Too high');
+    }
+    //console.log('Too high');
+    userGuess = prompt('What number am I thinking of?');
+    numGuess++;
+    if(userGuess !== myNum && numGuess === 4) {
+      alert(`The correct number was ${myNum}!`);
+      //console.log(`The correct number was ${myNum}!`);
+    }
+    else if(userGuess === myNum) {
+      alert('You got it right!');
+      //console.log('You got it right!');
+    }
+  }
