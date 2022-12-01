@@ -2,13 +2,13 @@ body {
   background-color: skyblue;
   color:darkblue;
   margin:auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-block: 30px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-block: 2vw;
 
 }
 
 h1 {
   font-size: 3vw;
-  padding-bottom: 10px;
+  padding-bottom: 1vw;
 }
