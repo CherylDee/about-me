@@ -70,27 +70,22 @@ alert(`Thank you, ${userName} for playing my guessing game! I hope you enjoyed g
 
 //TODO: prompt user to guess number in 4 tries, tell if too high or too low, give the number after 4 tries.
 
-let myNum = 12
-let numGuess = 0
-let userGuess = prompt('What number am I thinking of?');
+let myNum = 12;
 
-while (userGuess !== myNum && numGuess < 4) {
-  if(userGuess < myNum) {
-    alert('Too low');
-    //console.log('Too low');
+for (let i = 0; i < 4; i++) {
+  let sixthGuess = +prompt('Guess what number I am thinking about...');
+
+  if (sixthGuess > myNum) {
+    alert('Whoa, too high');
   }
-  else if (userGuess > myNum) {
-    alert('Too high');
-    }
-    //console.log('Too high');
-    userGuess = prompt('What number am I thinking of?');
-    numGuess++;
-    if(userGuess !== myNum && numGuess === 4) {
-      alert(`The correct number was ${myNum}!`);
-      //console.log(`The correct number was ${myNum}!`);
-    }
-    else if(userGuess === myNum) {
-      alert('You got it right!');
-      //console.log('You got it right!');
-    }
+  else if(sixthGuess < myNum) {
+    alert('Whoa, too low');
   }
+  else if(sixthGuess === myNum) {
+    alert('You got it right!');
+    break;
+  }
+  if(i === 1) {
+    alert('You are out of attempts, the answer was 12!');
+  }
+}
