@@ -73,7 +73,7 @@ alert(`Thank you, ${userName} for playing my guessing game! I hope you enjoyed g
 let myNum = 12;
 
 for (let i = 0; i < 4; i++) {
-  let sixthGuess = +prompt('Guess what number I am thinking about...');
+  let sixthGuess = +prompt('Guess what number I am thinking about?');
 
   if (sixthGuess > myNum) {
     alert('Whoa, too high');
@@ -85,7 +85,7 @@ for (let i = 0; i < 4; i++) {
     alert('You got it right!');
     break;
   }
-  if(i === 1) {
+  if(i === 3) {
     alert('You are out of attempts, the answer was 12!');
   }
 }
