@@ -3,7 +3,7 @@
 //console.log('Hey y\'all!');
 
 //TODO; GET USERS NAME - prompt - alert a greeting back to the user
-
+let score = 0;
 let userName = prompt('What is your name?');
 
 alert(`Hello, ${userName}! Please answer the following questions with yes/no or y/n.`);
@@ -17,7 +17,8 @@ if(firstGuess === 'yes' || firstGuess === 'y'){
   //console.log('Sorry, you got it wrong.');
 }else if(firstGuess === 'no' || firstGuess === 'n'){
   alert('You got it right!');
-  //console.log('You got i t right!');
+  score++;
+  //console.log('You got it right!');
 }
 
 
@@ -26,6 +27,7 @@ let secondGuess = prompt('Am I a Florida native?').toLowerCase();
 if(secondGuess === 'yes' || secondGuess === 'y'){
   alert('You got it right!');
   //console.log('You got it right!');
+  score++;
 }else if(secondGuess === 'no' || secondGuess === 'n'){
   alert('Sorry, you got it wrong.');
    //console.log('Sorry, you got it wrong.');
@@ -36,6 +38,7 @@ let thirdGuess = prompt('Do I have any children?').toLowerCase();
 
 if(thirdGuess === 'yes' || thirdGuess === 'y'){
   alert('You got it right!');
+  score++;
   //console.log('You got it right!');
 }else if(thirdGuess === 'no' || thirdGuess === 'n'){
   alert('Sorry, you got it wrong.');
@@ -50,6 +53,7 @@ if(fourthGuess === 'yes' || fourthGuess === 'y'){
    //console.log('Sorry, you got it wrong.');
 }else if(fourthGuess === 'no' || fourthGuess === 'n'){
   alert('You got it right!');
+  score++;
   //console.log('You got it right!');
 }
 
@@ -58,15 +62,12 @@ let fifthGuess = prompt('Have I ever lived outside of the U.S.?').toLowerCase();
 
 if(fifthGuess === 'yes' || fifthGuess === 'y'){
   alert('You got it right!');
+  score++;
   //console.log('You got it right!');
 }else if(fifthGuess === 'no' || fifthGuess === 'n'){
   alert('Sorry, you got it wrong.');
    //console.log('Sorry, you got it wrong.');
 }
-
-//TODO: GIVE a personalized message at the end
-
-alert(`Thank you, ${userName} for playing my guessing game! I hope you enjoyed getting to know me. Goodbye.`);
 
 //TODO: prompt user to guess number in 4 tries, tell if too high or too low, give the number after 4 tries.
 
@@ -83,9 +84,33 @@ for (let i = 0; i < 4; i++) {
   }
   else if(sixthGuess === myNum) {
     alert('You got it right!');
+    score++;
     break;
   }
   if(i === 3) {
     alert('You are out of attempts, the answer was 12!');
+  }
+}
+// TODO:  create loop for user to guess one of favorite novels with 6 tries total, keep score and display correct answer at end.
+
+let romanceNovels = ['DEVIL IN WINTER', 'HELLO STRANGER', 'CHASING CASSANDRA', 'PERSUASION', 'THE UGLY DUCHESS'];
+
+for (let i = 0; i < 6; i++) { //outer loop
+  let seventhGuess = prompt('What is one of my favorite romance novels?').toUpperCase();
+  
+  for (let j = 0; j < romanceNovels.length; j++) { //inner loop
+    if (seventhGuess === romanceNovels[j]) {
+    alert('Yes, so hot!')
+    score++;
+    break;
+    }
+    else if (seventhGuess !== romanceNovels[j]) {
+     alert('Sorry, not on my list.');
+    }
+
+  //TODO: GIVE a personalized message at the end with the total score
+    if(i == 6) {
+    alert(`Nice ${userName}, you got ${score} out of 7! Hope you had fun and thanks for playing!`); 
+    } 
   }
 }
