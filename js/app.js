@@ -92,7 +92,7 @@ for (let i = 0; i < 4; i++) {
   }
 }
 // TODO:  create loop for user to guess one of favorite novels with 6 tries total, keep score and display correct answer at end.
-
+let guesses = 6;
 let romanceNovels = ['DEVIL IN WINTER', 'HELLO STRANGER', 'CHASING CASSANDRA', 'PERSUASION', 'THE UGLY DUCHESS'];
 
 for (let i = 0; i < 6; i++) { //outer loop
