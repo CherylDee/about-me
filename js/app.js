@@ -93,9 +93,9 @@ for (let i = 0; i < 4; i++) {
 }
 // TODO:  create loop for user to guess one of favorite novels with 6 tries total, keep score and display correct answer at end.
 let guesses = 6;
-let romanceNovels = ['DEVIL IN WINTER', 'HELLO STRANGER', 'CHASING CASSANDRA', 'PERSUASION', 'THE UGLY DUCHESS'];
+let romanceNovels = ['DEVIL IN WINTER', 'HELLO STRANGER', 'CHASING CASSANDRA'];
 
-for (let i = 0; i < 6; i++) { //outer loop
+for (let i = 0; i < guesses; i++) { //outer loop
   let seventhGuess = prompt('What is one of my favorite romance novels?').toUpperCase();
   
   for (let j = 0; j < romanceNovels.length; j++) { //inner loop
@@ -103,9 +103,6 @@ for (let i = 0; i < 6; i++) { //outer loop
     alert('Yes, so hot!')
     score++;
     break;
-    }
-    else if (seventhGuess !== romanceNovels[j]) {
-     alert('Sorry, not on my list.');
     }
 
   //TODO: GIVE a personalized message at the end with the total score
