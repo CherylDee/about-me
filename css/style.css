@@ -1,11 +1,18 @@
 body {
-  background-image: url(images/baltic-saltlake);
+  background-image: url(..img/baltic-saltlake.jpg);
   color:white;
   margin:auto;
   padding-left: 2vw;
   padding-right: 2vw;
   padding-block: 2vw;
 
+}
+#about {
+  width: 5vw;
+  padding: 3vw;
+}
+p {
+  line-height: 140%;
 }
 
 h1 {
