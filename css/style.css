@@ -1,5 +1,5 @@
 body {
-  background-image: url('img_baltic-saltlake.jpg');
+  background-image: url('img/baltic-saltlake.jpg');
   background-repeat: no-repeat;
   background-color:darkslateblue;
   color: whitesmoke;
@@ -9,12 +9,12 @@ body {
 }
 
 #content {
-  padding: 30px;
+  padding: 10px;
 }
 
 header {
    text-align: center;
-   padding-bottom: 20px;
+   padding-bottom: 10px;
 }
 h1 {
   font-size: 2.5em; /* 40px/16=2.5em */
@@ -46,10 +46,10 @@ ol {
 } 
 .column1 {
   flex: 50%;
-  padding-left: 30px;
+  padding-left: 20px;
   
 }
 .column2 {
   flex: 50%; 
-  padding-left: 80px;
+  padding-left: 50px;
 }
