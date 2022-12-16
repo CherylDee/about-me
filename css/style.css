@@ -1,6 +1,5 @@
 body {
   width: 100%;
-  margin: auto;
   background-image: url("img/baltic-saltlake.jpg");
   background-color: darkslateblue;
   padding: 20px;
@@ -11,6 +10,7 @@ body {
 
 #content {
   padding: 20px;
+  margin: 50px;
 }
 
 header {
